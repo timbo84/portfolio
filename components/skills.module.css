@@ -1,0 +1,62 @@
+.skills {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  opacity: 0; /* This is overridden by Framer Motion */
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+}
+
+.skillDetails {
+  flex: 1;
+}
+
+.skillName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.progressBar {
+  position: relative;
+  background: #e5e7eb;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  background: #3b82f6;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.percentage {
+  font-size: 1rem;
+  color: #d1d5db;
+}
