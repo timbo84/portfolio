@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import SkillsSection from "@/components/skills";
 import styles from "./page.module.css";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         muted
         className={styles.video}
       ></video>
+      <Navbar />
       <Hero />
+      <SkillsSection /> 
       {/* Add other components here */}
     </div>
   );

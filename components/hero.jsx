@@ -41,7 +41,7 @@ export default function HeroComponent() {
         >
           Explore My Projects
         </motion.button>
-        <SkillsSection />
+        {/* <SkillsSection /> */}
       </div>
     </div>
   );

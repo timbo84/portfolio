@@ -13,7 +13,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className={styles.skills}>
+    <div className={styles.skills}>
       <motion.h2
         className={styles.heading}
         initial={{ opacity: 0, y: -50 }}
@@ -45,6 +45,6 @@ export default function SkillsSection() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

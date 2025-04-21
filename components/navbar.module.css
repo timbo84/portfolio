@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent */
+    color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it stays above other elements */
+  }
+  
+  .brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f5f5f5; /* Neutral color for the brand */
+    text-decoration: none;
+  }
+  
+  .links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+  }
+  
+  .links a:hover {
+    color: #71c7b8; /* Pastel blue for hover */
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f5f5f5;
+  }
+  
+  @media (max-width: 768px) {
+    .links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.9); /* Dark background for mobile menu */
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  
+    .links.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }

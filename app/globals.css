@@ -1,0 +1,10 @@
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #F0F4F8; /* Light and subtle text for clarity */
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700; /* Bold for headings */
+    margin-bottom: 1rem;
+  }
